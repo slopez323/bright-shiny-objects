@@ -2,13 +2,36 @@
 // │ Your code here! │
 // └─────────────────┘
 
+function createUser(first, last) {
+    return {
+        firstName: first,
+        lastName: last
+    }
+}
 
+function setAge(user, userAge) {
+    user.age = userAge
+    return user
+}
 
+function incrementAge(user) {
+    user.age = user.age + 1
+    return user
+}
 
+function fixCar(car) {
+    car.needsMaintenance = false
+    return car
+}
 
+function addGrades(student, newGrades) {
+    student.grades = student.grades.concat(newGrades)
+    return student
+}
 
+function getDataType() {
 
-
+}
 
 
 // ┌─────────────────────────────────────────────────────────────────────────┐

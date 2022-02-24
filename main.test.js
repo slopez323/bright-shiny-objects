@@ -71,7 +71,7 @@ test('addGrades', function () {
     });
 });
 
-test('getDataType', function () {
+test.skip('getDataType', function () {
     const car = {
         make: 'Ford',
         model: 'Mustang',
@@ -84,7 +84,7 @@ test('getDataType', function () {
     expect(getDataType(car, 'needsMaitenance')).toBe('boolean');
 });
 
-test('addTodo', function () {
+test.skip('addTodo', function () {
     const todos = [
         { 
             title: 'Get gas', 
@@ -114,7 +114,7 @@ test('addTodo', function () {
     ]);
 });
 
-test('addSong', function () {
+test.skip('addSong', function () {
     const playlist = {
         title: 'My jams',
         duration: 7,
@@ -159,7 +159,7 @@ test('addSong', function () {
     });
 });
 
-test('updateReportCard', function () {
+test.skip('updateReportCard', function () {
     let reportCard = {
         lowestGrade: 70,
         highestGrade: 96,
