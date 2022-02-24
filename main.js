@@ -29,8 +29,34 @@ function addGrades(student, newGrades) {
     return student
 }
 
-function getDataType() {
+function getDataType(object, key) {
+    return typeof object[key]
+}
 
+function addTodo(todos, newTodo) {
+    todos.push(newTodo)
+    return todos
+}
+
+function addSong(playlist, song) {
+    playlist.duration += song.duration
+    playlist.songs.push(song)
+    return playlist
+}
+
+function updateReportCard(reportCard, newGrade) {
+    reportCard.grades.push(newGrade)
+    reportCard.lowestGrade = Math.min(...reportCard.grades)
+    reportCard.highestGrade = Math.max(...reportCard.grades)
+
+    let sum = 0
+    for (let grade of reportCard.grades) {
+        sum += grade
+    }
+
+    reportCard.averageGrade = sum / reportCard.grades.length
+
+    return reportCard
 }
 
 
